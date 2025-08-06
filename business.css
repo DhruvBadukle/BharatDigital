@@ -41,11 +41,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+html, body {
   color: var(--text);
   line-height: 1.6;
   background-color: #11112b;
   overflow-x: hidden;
+  width: 100%;
 }
 
 

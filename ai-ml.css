@@ -28,10 +28,12 @@
   margin: 0;
   padding: 0;
 }
-body {
+html,body {
   background-color: #11112b;
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Navbar Styles */
