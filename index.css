@@ -2470,7 +2470,7 @@ main::before {
   .tech-cube-container {
     position: relative;
     right: auto;
-    top: auto;
+    top: 100px;
     transform: none;
     margin: 40px auto;
   }
