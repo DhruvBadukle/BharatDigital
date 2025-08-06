@@ -2658,3 +2658,64 @@ main::before {
     padding: 20px;
   }
 }
+
+/* Add this at the end of your CSS */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .container,
+  .navbar-container,
+  .hero-content,
+  .features-section,
+  .services,
+  .testimonials-section,
+  .footer-main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .navbar {
+    width: calc(100% - 30px);
+    left: 15px;
+    transform: translateX(0);
+  }
+  
+  .content-section,
+  .c1,
+  .c2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .logo-carousel-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container,
+  .navbar-container,
+  .hero-content,
+  .features-section,
+  .services,
+  .testimonials-section,
+  .footer-main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .navbar {
+    width: calc(100% - 20px);
+    left: 10px;
+  }
+  
+  .content-section,
+  .c1,
+  .c2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
