@@ -1294,3 +1294,33 @@ body {
   margin-bottom: 15px;
   padding-left: 20px;
 }
+
+/* Add this to your existing CSS */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    width: calc(100% - 20px);
+    left: 10px;
+    transform: none;
+  }
+  
+  .services-section, 
+  .how-it-works,
+  .footer-hero-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+  }
+  
+  .service-card {
+    margin-right: 0;
+  }
+}
