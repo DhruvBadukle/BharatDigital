@@ -314,6 +314,7 @@ html, body {
     font-weight: 700;
     margin-bottom: 60px;
     position: relative;
+    color: #ffffff;
 }
 
 .section-title::after {

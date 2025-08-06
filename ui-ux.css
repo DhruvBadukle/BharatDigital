@@ -42,10 +42,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+html,body {
   
   background: #11112b;
   line-height: 1.6;
+   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Navbar Styles */
@@ -543,6 +545,7 @@ p {
     transform: translateY(0);
   }
 }
+
 
 /* ===== Hero Section ===== */
 .hero {
