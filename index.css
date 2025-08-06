@@ -172,6 +172,7 @@ body {
   cursor: pointer;
   z-index: 1001;
   transition: var(--transition);
+  margin-right: 22px;
 }
 
 .mobile-menu-btn:hover {
@@ -2624,6 +2625,7 @@ main::before {
 /* Very Small Devices */
 @media (max-width: 400px) {
   .hero-content h1 {
+    margin-top: -80px;
     font-size: 1.6rem;
   }
   
