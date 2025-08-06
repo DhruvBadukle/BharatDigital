@@ -1084,7 +1084,6 @@ main::before {
   }
 
   .cta-button {
-    width: 100%;
     text-align: center;
     padding: 15px;
   }
@@ -2391,4 +2390,271 @@ main::before {
 .modal-content ul {
   margin-bottom: 15px;
   padding-left: 20px;
+}
+
+
+/* Add these responsive media queries at the end of your existing CSS */
+
+/* General Responsive Adjustments */
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .tech-cube-container {
+    right: 30px;
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 800px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .advantages-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .advantages-visual {
+    order: -1;
+    margin-bottom: 40px;
+  }
+  
+  .service-title h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+  
+  .navbar {
+    top: 10px;
+    width: calc(100% - 20px);
+    height: 60px;
+  }
+  
+  .hero {
+    padding: 80px 0 0;
+    margin-top: -80px;
+  }
+  
+  .hero-content {
+    padding-bottom: 40px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+    margin-top: 30px;
+  }
+  
+  .tech-cube-container {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin: 40px auto;
+  }
+  
+  .hero-btns {
+    margin-top: 30px;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature {
+    padding: 25px;
+  }
+  
+  .testimonials-container {
+    flex-direction: column;
+  }
+  
+  .divider {
+    display: none;
+  }
+  
+  .footer-hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-container {
+    padding: 0.7rem 1rem;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-content .lead {
+    font-size: 0.95rem;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .hero-btns {
+    gap: 10px;
+  }
+  
+  .c1 h1 {
+    font-size: 1.8rem;
+  }
+  
+  .c2 .d1 {
+    width: 100%;
+  }
+  
+  .service-title h2 {
+    font-size: 2rem;
+  }
+  
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-logo img {
+    height: 70px;
+  }
+}
+
+/* Specific Component Adjustments */
+@media (max-width: 992px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  
+  /* Reset specific service card positions */
+  .service-card:nth-child(1),
+  .service-card:nth-child(2),
+  .service-card:nth-child(3),
+  .service-card:nth-child(4),
+  .service-card:nth-child(5),
+  .service-card:nth-child(6),
+  .service-card:nth-child(7) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .trust-indicators {
+    grid-template-columns: 1fr;
+  }
+  
+  .advantage-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .advantage-icon {
+    margin: 0 auto 15px;
+  }
+}
+
+/* Touch Target Sizes for Mobile */
+@media (max-width: 768px) {
+  .nav-links a,
+  .btn {
+    padding: 12px 20px;
+  }
+  
+  .footer-links a {
+    padding: 8px 0;
+  }
+  
+  .social-links a {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* Landscape Orientation Adjustments */
+@media (max-width: 992px) and (orientation: landscape) {
+  .hero {
+    padding: 60px 0 0;
+  }
+  
+  .hero-content {
+    padding-bottom: 30px;
+  }
+  
+  .tech-cube-container {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Very Small Devices */
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+  
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .footer-logo img {
+    height: 60px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .mobile-menu-btn,
+  .footer-hero-section,
+  .footer {
+    display: none;
+  }
+  
+  body {
+    padding-top: 0;
+    background-color: white;
+    color: black;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
 }
