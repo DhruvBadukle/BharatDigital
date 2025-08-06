@@ -26,12 +26,27 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    scroll-behavior: smooth;
-    background-color: var(--dark);
-    color: var(--text);
-    line-height: 1.6;
+/* Add this at the end of your CSS file */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    background-color: #11112B;
 }
+
+/* Ensure all sections don't exceed viewport width */
+.services-section,
+.how-it-works,
+.footer-hero-section,
+.footer-main {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+ 
 
 /* Navbar Styles */
 .navbar {
