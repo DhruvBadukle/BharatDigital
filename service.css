@@ -169,6 +169,7 @@ body {
   cursor: pointer;
   z-index: 1001;
   transition: var(--transition);
+  margin-right: 22px;
 }
 
 .mobile-menu-btn:hover {
