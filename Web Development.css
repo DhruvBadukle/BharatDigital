@@ -1105,6 +1105,9 @@ main {
 }
 
 @media (max-width: 576px) {
+  .footer-logo img {
+        height: 70px;
+    }
     .hero {
         padding: 0 5%;
     }
@@ -1236,4 +1239,231 @@ main {
 .modal-content ul {
   margin-bottom: 15px;
   padding-left: 20px;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1400px) {
+  .navbar {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    top: 10px;
+    width: calc(100% - 20px);
+    border-radius: 30px;
+  }
+
+  .hero {
+    padding: 6rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .process-steps::before {
+    display: none;
+  }
+  
+  .step {
+    padding: 1rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem 1.5rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .section-title, .portfolio-section-title {
+    font-size: 2rem;
+  }
+  
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    top: 5px;
+    width: calc(100% - 10px);
+    border-radius: 20px;
+  }
+  
+  .hero {
+    padding: 4rem 1rem;
+    margin: 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .section-title, .portfolio-section-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    height: 280px;
+  }
+  
+  .portfolio-item {
+    height: 200px;
+  }
+  
+  .footer-hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .footer-main {
+    margin-top: 50px;
+    padding: 0 15px;
+  }
+  
+  .footer-col {
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  
+  .hero p {
+    font-size: 0.95rem;
+  }
+  
+  .card {
+    height: 260px;
+    min-height: 260px;
+  }
+  
+  .card-front, .card-back {
+    padding: 1.5rem;
+  }
+  
+  .footer-hero-content h1 {
+    font-size: 1.6rem;
+  }
+  
+  .footer-logo img {
+    height: 70px;
+  }
+  
+  .footer-title {
+    font-size: 1.2rem;
+  }
+  
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+  }
+  
+  .contact-icon {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+  
+  .section-title, .portfolio-section-title {
+    font-size: 1.4rem;
+  }
+  
+  .card h2 {
+    font-size: 1.3rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+  }
+  
+  .step-number {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .step h3 {
+    font-size: 1.1rem;
+  }
+  
+  .step p {
+    font-size: 0.9rem;
+  }
+  
+  .footer-hero-content h1 {
+    font-size: 1.4rem;
+  }
 }

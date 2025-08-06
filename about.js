@@ -37,49 +37,6 @@ ScrollTrigger.create({
   }
 });
 
-// Mobile menu toggle
-const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
-const navLinks = document.querySelector(".nav-links");
-
-mobileMenuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  mobileMenuBtn.innerHTML = navLinks.classList.contains("active")
-    ? '<i class="fas fa-times"></i>'
-    : '<i class="fas fa-bars"></i>';
-});
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    if (navLinks.classList.contains("active")) {
-      navLinks.classList.remove("active");
-      mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-    }
-  });
-});
-
-// Navbar scroll effect
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar");
-  if (window.scrollY > 20) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
-
-// Highlight active link based on current page
-document.addEventListener("DOMContentLoaded", function () {
-  const currentLocation = location.href;
-  const navLinks = document.querySelectorAll(".nav-links a");
-
-  navLinks.forEach((link) => {
-    if (link.href === currentLocation) {
-      link.classList.add("active");
-    }
-  });
-});
-
 // Modal functionality
 const modalOverlay = document.getElementById('policyModal');
 const modalTitle = document.getElementById('modalTitle');
@@ -219,4 +176,47 @@ document.addEventListener('keydown', (e) => {
     modalOverlay.classList.remove('active');
     document.body.style.overflow = 'auto';
   }
+});
+
+// Mobile menu toggle
+const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+mobileMenuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  mobileMenuBtn.innerHTML = navLinks.classList.contains("active")
+    ? '<i class="fas fa-times"></i>'
+    : '<i class="fas fa-bars"></i>';
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    if (navLinks.classList.contains("active")) {
+      navLinks.classList.remove("active");
+      mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+  });
+});
+
+// Navbar scroll effect
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 20) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
+// Highlight active link based on current page
+document.addEventListener("DOMContentLoaded", function () {
+  const currentLocation = location.href;
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach((link) => {
+    if (link.href === currentLocation) {
+      link.classList.add("active");
+    }
+  });
 });

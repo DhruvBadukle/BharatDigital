@@ -1104,6 +1104,9 @@
 }
 
 @media (max-width: 576px) {
+  .footer-logo img {
+        height: 70px;
+    }
     .hero {
         padding: 0 5%;
     }

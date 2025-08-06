@@ -1002,6 +1002,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .footer-logo img {
+    height: 70px;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
   }
