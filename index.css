@@ -21,8 +21,6 @@
   --light: #f8f9fa;
   --gray: #cccccc;
   --dark-gray: #6c757d;
-
-  
 }
 
 * {
@@ -33,9 +31,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  padding-top: 100px;  
-  background-color: #11112B;
+html, body {
+  padding-top: 50px;  
+  background-color: #0B0B21;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Navbar Styles */
@@ -170,7 +170,7 @@ body {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: var(--black);
+  color: var(--dark-gray);
   cursor: pointer;
   z-index: 1001;
   transition: var(--transition);
@@ -242,6 +242,7 @@ body {
   }
 }
 
+ 
 /* Sample content to demonstrate scrolling */
 .content-section {
   height: 100vh;
@@ -2399,7 +2400,6 @@ main::before {
   }
   
    
-  
   .hero {
     padding: 80px 0 0;
     margin-top: -80px;
@@ -2448,14 +2448,13 @@ main::before {
 }
 
 @media (max-width: 576px) {
-   
   
   .logo img {
     height: 40px;
   }
   
   .hero-content h1 {
-    margin-top: -80px;
+    margin-top: -110px;
     font-size: 1.8rem;
   }
   
@@ -2587,4 +2586,72 @@ main::before {
   }
 }
 
+/* Print Styles */
+@media print {
  
+  .mobile-menu-btn,
+  .footer-hero-section,
+  .footer {
+    display: none;
+  }
+  
+  
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+/* Add this at the end of your CSS */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .container,
+   
+  .hero-content,
+  .features-section,
+  .services,
+  .testimonials-section,
+  .footer-main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+   
+  
+  .content-section,
+  .c1,
+  .c2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .logo-carousel-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container,
+   
+  .hero-content,
+  .features-section,
+  .services,
+  .testimonials-section,
+  .footer-main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+   
+  
+  .content-section,
+  .c1,
+  .c2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
