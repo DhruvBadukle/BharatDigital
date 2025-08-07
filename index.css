@@ -170,7 +170,7 @@ html, body {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: var(--dark-gray);
+  color: var(--black);
   cursor: pointer;
   z-index: 1001;
   transition: var(--transition);
@@ -222,14 +222,14 @@ html, body {
   }
 
   .nav-links li {
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1rem 0;  
     width: 100%;
   }
 
   .nav-links a {
-    font-size: 1.1rem;
+    font-size: 1rem;   
     display: block;
-    padding: 0.5rem 10px;
+    padding: 0.4rem 10px; 
   }
 
   .mobile-menu-btn {
@@ -2463,7 +2463,7 @@ main::before {
   }
   
   .btn {
-    width: 100%;
+    width: 60%;
   }
   
   .hero-btns {
