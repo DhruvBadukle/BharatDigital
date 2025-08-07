@@ -1086,6 +1086,7 @@ body {
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  border: none;
 }
 
 .cta-button:hover {

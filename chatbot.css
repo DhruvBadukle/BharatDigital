@@ -341,6 +341,7 @@ html,body {
   box-shadow: 0 4px 15px rgba(74, 108, 247, 0.3);
   border: none;
   cursor: pointer;
+  border: none;
 }
 
 .cta-button:hover {

@@ -821,6 +821,7 @@ h4 {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  border: none;
 }
 
 .cta-button:hover {
