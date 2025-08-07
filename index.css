@@ -21,6 +21,8 @@
   --light: #f8f9fa;
   --gray: #cccccc;
   --dark-gray: #6c757d;
+
+  
 }
 
 * {
@@ -74,7 +76,7 @@ body {
 }
 
 .logo img {
-  height: 50px;  /*width : 205*/
+  height: 50px;
   width: auto;
   object-fit: contain;
   transition: var(--transition);
@@ -168,11 +170,10 @@ body {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: var(--dark-gray);
+  color: var(--black);
   cursor: pointer;
   z-index: 1001;
   transition: var(--transition);
-  margin-right: 22px;
 }
 
 .mobile-menu-btn:hover {
@@ -211,7 +212,8 @@ body {
     border-radius: 0 30px 30px 0;
     transition: var(--transition);
   }
-  .nav-links a{
+
+  .nav-links a {
     color: #fff;
   }
 
@@ -237,18 +239,6 @@ body {
   .logo img {
     height: 42px;
     width: 110px;
-  }
-}
-
-/* Animation for navbar on scroll */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -2408,11 +2398,7 @@ main::before {
     padding-top: 80px;
   }
   
-  .navbar {
-    top: 10px;
-    width: calc(100% - 20px);
-    height: 60px;
-  }
+   
   
   .hero {
     padding: 80px 0 0;
@@ -2462,15 +2448,14 @@ main::before {
 }
 
 @media (max-width: 576px) {
-  .navbar-container {
-    padding: 0.7rem 1rem;
-  }
+   
   
   .logo img {
     height: 40px;
   }
   
   .hero-content h1 {
+    margin-top: -80px;
     font-size: 1.8rem;
   }
   
@@ -2602,84 +2587,4 @@ main::before {
   }
 }
 
-/* Print Styles */
-@media print {
-  .navbar,
-  .mobile-menu-btn,
-  .footer-hero-section,
-  .footer {
-    display: none;
-  }
-  
-  body {
-    padding-top: 0;
-    background-color: white;
-    color: black;
-  }
-  
-  .container {
-    max-width: 100%;
-    padding: 20px;
-  }
-}
-
-/* Add this at the end of your CSS */
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  
-  .container,
-  .navbar-container,
-  .hero-content,
-  .features-section,
-  .services,
-  .testimonials-section,
-  .footer-main {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  .navbar {
-    width: calc(100% - 30px);
-    left: 15px;
-    transform: translateX(0);
-  }
-  
-  .content-section,
-  .c1,
-  .c2 {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  .logo-carousel-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  .container,
-  .navbar-container,
-  .hero-content,
-  .features-section,
-  .services,
-  .testimonials-section,
-  .footer-main {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  .navbar {
-    width: calc(100% - 20px);
-    left: 10px;
-  }
-  
-  .content-section,
-  .c1,
-  .c2 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
+ 
