@@ -1436,7 +1436,7 @@ main::before {
 .floating-badge {
   position: absolute;
   bottom: -20px;
-  right: -20px;
+  right: 120px;
   background: var(--gradient);
   color: white;
   padding: 15px 25px;
@@ -1824,7 +1824,7 @@ main::before {
    text-align: center;
   position: relative;
   min-height: 100vh;
-  background-color: #11112B;
+  background-color: #0B0B21;
   background-image: url("");
 }
 
@@ -1847,7 +1847,7 @@ main::before {
 
 /* Footer Styles */
 .footer {
-  background-color: #11112B;
+  background-color: #0B0B21;
   color: #ffffff;
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
