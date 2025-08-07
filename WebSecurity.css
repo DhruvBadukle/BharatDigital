@@ -39,6 +39,7 @@ html,body {
   line-height: 1.6;
   overflow-x: hidden;
   width: 100%;
+  background-color: #11112B;
 }
 
 h1,
@@ -102,10 +103,7 @@ h1 {
   margin: 0 auto;
 }
 
-.navbar.scrolled {
-  box-shadow: var(--shadow-md);
-  top: 10px;
-}
+ 
 
 .navbar-container {
   display: flex;
@@ -311,6 +309,7 @@ h1 {
   margin-bottom: 1rem;
   position: relative;
   display: inline-block;
+  color: #ffffff;
 }
 
 .section-title:after {
@@ -326,7 +325,7 @@ h1 {
 
 .section-subtitle {
   font-size: 1.1rem;
-  color: #555;
+  color: #ffffff;
   max-width: 700px;
   margin: 0 auto 3rem;
 }

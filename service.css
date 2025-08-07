@@ -27,7 +27,7 @@
 }
 
 /* Add this at the end of your CSS file */
-html, body {
+body {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
@@ -1330,6 +1330,7 @@ html, body {
   .footer-hero-section {
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: -50px;
   }
   
   .services-grid {

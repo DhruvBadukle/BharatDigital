@@ -1144,6 +1144,7 @@ html,body {
 @media (max-width: 576px) {
   .hero {
     padding: 4rem 5% 6rem;
+    margin-top: -30px;
   }
 
   .hero h1 {
