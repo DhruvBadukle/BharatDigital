@@ -518,7 +518,7 @@ main::before {
   position: absolute;
   right: 100px;
   right: 50px;
-  top: 63%;
+  top: 50%;
   transform: translateY(-50%);
   width: 200px;
   height: 200px;

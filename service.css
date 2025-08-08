@@ -32,21 +32,7 @@ html,body {
     width: 100%;
     max-width: 100%;
     background-color: #11112B;
-}
-
-/* Ensure all sections don't exceed viewport width */
-.services-section,
-.how-it-works,
-.footer-hero-section,
-.footer-main {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-}
-
- 
+} 
 
 /* Navbar Styles */
 .navbar {
@@ -1310,14 +1296,6 @@ html,body {
     width: calc(100% - 20px);
     left: 10px;
     transform: none;
-  }
-  
-  .services-section, 
-  .how-it-works,
-  .footer-hero-section {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: -50px;
   }
   
   .services-grid {
